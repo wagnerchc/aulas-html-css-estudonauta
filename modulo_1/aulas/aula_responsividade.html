@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinâmicas</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <h2>Uso da tag &lt;picture&gt;</h2>
+        <p>A ordem das imagens deve ser da menor para maior, para se comportar conforme dispositivos ou zoom do navegador</p>
+        <a href="../index.html">Voltar a página principal</a>
+        <p>
+            <picture>
+                <source media="(max-width:750px)" srcset="../imagens/img_p.jpg" type="image/jpg"/>
+                <source media="(max-width:1050px)" srcset="../imagens/img_m.jpg" type="image/jpg"/>
+                <img src="../imagens/img_g.jpg" alt="Imagens flexíveis">
+            </picture>
+        </p>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+</head>
+<body>
+    <h1>Links</h1>
+        <h2>Tag &lt;a href=""&gt;</h2>
+            <p>O site abrirá na mesma aba do navegador e não possui texto alternativo</p>
+            <a href="https://www.google.com.br">Clique aqui para visitar o site do Google</a>
+        <h2>Tag &lt;a href="" alt=""&gt;</h2>
+            <p>O site abrirá na mesma aba do navegador e possui texto alternativo por conta <strong>alt=""</strong></p>
+            <a href="https://www.google.com.br" alt="Google">Clique aqui para visitar o site do Google</a>
+        <h2>Tag &lt;a href="" alt="" target=""&gt;</h2>
+            <ul type="square">
+            <li><h3>target="_blank"</h3></li>
+                <p>O site abrirá em outra aba do navegador por conta do atributo <strong>target="_blank"</strong></p>
+                <a href="https://www.google.com.br" alt="Google" target="_blank">Clique aqui para visitar o site do Google</a>
+            <li><h3>target="_self"</h3></li>
+                <p>O site abrirá na mesma aba do navegador por conta do atributo <strong>target="_self"</strong></p>
+                <a href="https://www.google.com.br" alt="Google" target="_self">Clique aqui para visitar o site do Google</a>
+            <li><h3>target="_top"</h3></li>
+                <p>O site vai desfazer todos os frames e abrir o destino no navegador completo por conta do atributo <strong>target="_top"</strong></p>
+                <a href="https://www.google.com.br" alt="Google" target="_top">Clique aqui para visitar o site do Google</a>
+            <li><h3>target="_parent"</h3></li>
+                <p>O site abrirá semelhante ao atibuito "_top", desfazendo todos os frames e abrirá em referência à janela mãe por conta do atributo <strong>target="_parent"</strong></p>
+                <a href="https://www.google.com.br" alt="Google" target="_parent">Clique aqui para visitar o site do Google</a>
+            <li><h3>target="nome-do-frame"</h3></li>
+                <p>A técnica de frames está quase em desuso, mas a ideia seria indicar o nome da janela a abrir usando o atributo <strong>target="nome-do-frame"</strong></p>
+                <a href="https://www.google.com.br" alt="Google" target="">Clique aqui para visitar o site do Google</a>
+            </ul>
+                
+        <h2>Tag &lt;a href="" alt="" target="" hreflang=""&gt;</h2>
+            <p>O atributo <strong>hreflang=""</strong> indica qual é o idioma principal do site para onde o link está desviando o fluxo de navegação. Isso sinalizará ao navegador e a softwares de tradução como lidar caso o visitante opte por traduzir automaticamente os conteúdos.</p>    
+            <ul type="disc">
+                <li>Site do Google.com com a &lt;hreflang="en"&gt; indicando o site em inglês
+                    <a href="https://www.google.com" alt="Google" target="_blank" hreflang="en">Google.com</a>
+                </li>
+                <li>Site do Google.com com a &lt;hreflang="pt-br"&gt; indicando o site para traduzir para português
+                    <a href="https://www.google.com.br" alt="Google" target="_blank" hreflang="pt-br">Google.com.br</a>
+                </li>
+            </ul>
+        <h2>Tag &lt;a href="" alt="" target="" hreflang="" rel=""&gt;</h2>
+            <p>O atributo <strong>rel=""</strong> indicar qual é a natureza do destino</p>
+            <ul type="circle">
+                <li>next - indica que o link é para a próxima parte do documento atual</li>
+                <li>prev - indica que o link é para a parte anterior do documento atual</li>
+                <li>author - indica que é um link para o site do autor do artigo atual</li>
+                <li>external - indica que é um link para outro site que não faz parte do site atual</li>
+                <li>nofollow - indica que é um link para um site não endossado, como um link pago</li>
+            </ul>
+        <h2>Link para página interna</h2>
+        <ul>
+            <li>Link para um site que está dentro da mesma pasta. <a href="./aula_listas.html" rel="next">Clique aqui</a></li>
+            <li>Link para um site que está dentro de outra pasta. <a href="../desafios/d001/d001.html" rel="next">Clique aqui</a></li>
+        </ul>
+        <h2>Link para download</h2>
+            <p>O link do download deve conter obrigatoriamente 2 (dois) atributos <strong>download="nome-do-arquivo.extensão"</strong> e <strong>type="application/pdf"</strong></p>
+            <ol>
+                <li>Livro em .pdf <a href="https://github.com/gustavoguanabara/html-css/raw/master/exercicios/modulo-01/ex010/livro/meulivro.pdf" download="meulivro.pdf" type="application/pdf">Clique aqui</a></li>
+                <li>Livro em .zip <a href="https://github.com/gustavoguanabara/html-css/raw/master/exercicios/modulo-01/ex010/livro/meulivro.zip" download="meulivro.zip" type="application/zip">Clique aqui</a></li>
+            </ol>
+        <a href="../index.html" rel="prev">Voltar a página principal</a>
+</body>
+</html>

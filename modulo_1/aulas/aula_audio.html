@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Áudio</title>
+</head>
+<body>
+    <H1>Colocando áudio</H1>
+    <a href="../index.html">Voltar a página principal</a>
+    <h2>Atributo preload="metadata"</h2>
+    <p>Vai carregar somente os dados dos arquivo, mas o usuário precisa dar play para começar a carregar o arquivo<br>
+        <audio preload="metadata" controls loop>
+            <source src="../midia/guanacast-33.mp3" type="audio/mpeg">
+    </p>
+    <h2>Atributo preload="none"</h2>
+    <p>Não vai carregar nada sobre o arquivo de áudio e nem o arquivo<br>
+        <audio preload="none" controls loop>
+            <source src="../midia/guanacast-33.mp3" type="audio/mpeg">
+    </p>
+    <h2>Atributo preload="auto"</h2>
+    <p>Vai carregar o arquivo todo, sem solicitação do usuário<br>
+        <audio preload="auto" controls loop>
+            <source src="../midia/guanacast-33.mp3" type="audio/mpeg">
+    </p>
+    <h2>O atributo: controls</h2>
+    <p>Adiciona na tela o: play, pause, volume.</p>
+    <h2>Outros atributos</h2>
+    <p>
+        <ul>
+            <li><strong>autoplay</strong> - serve para quando acessar o site já começa a tocar</li>
+            <li><strong>loop</strong> - vai repetir o áudio quando chegar ao final</li>
+            <li><strong>muted</strong> - o volume fica desligado, mas o usuário pode ligar</li>
+        </ul>
+    </p>
+</body>
+</html>
