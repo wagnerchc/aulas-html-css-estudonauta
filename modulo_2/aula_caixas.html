@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixas e shorthands</title>
+    <style>
+        h1 {
+            /*display: inline;*/ /*para mostrar sem as propriedades de uma caixa*/
+            /*display: inline-block;*/ /*para mostrar com algumas propriedades de uma caixa*/
+
+            background-color: #F29580;
+            
+            height: 300px;
+            width: 300px;
+            
+            /*border-top: 10px;
+            border-right: 10px;
+            border-bottom: 10px;
+            border-left: 10px;*/
+            border: 10px; /*é o mesmo valor para os quatro lados*/
+            
+            /*border-width: 10px;
+            border-style: solid;
+            border-color: darkblue;*/
+            border: 10px solid darkblue;
+            
+            /*padding-top: 10px;
+            padding-bottom: 10px;
+            padding-right: 10px;
+            padding-left: 10px;*/
+            /*padding: 10px 10px 10px 10px;*/ /*ou*/
+            padding: 10px; /*é o mesmo valor para os quatro lados*/
+            /*padding: 10px 20px;*/ /*é o mesmo valor para cima e baixo de 10px e direita e esquerda de 20px*/
+
+            /*margin: auto;*//*todo elemento que deva aparecer no meio da tela*/
+            margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-left: 20px;
+            /*os shorthands do padding vale para margin*/
+            
+            /*outline-width 5px;
+            outline-style: dashed;
+            outline-color: black;*/
+            outline: 5px dashed black;
+
+        }
+
+        a{
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona.</p>
+    <a href="../index.html" rel="prev">Voltar a página principal</a>
+</body>
+</html>

@@ -1,0 +1,52 @@
+@charset "UTF-8";
+/*
+#4E2559
+#141726
+#34BF98
+#2A8C70
+#F29580
+*/
+
+body {
+    background-color: #141726;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+div {
+    background-color: #4E2559;
+    border-radius: 5px;
+}
+
+h1{
+    padding: 0.5em;
+    border-radius: 5px;
+}
+
+h3{
+    padding: 0.5em;
+}
+
+p{
+    padding: 0.5em;
+}
+
+ol{
+    padding-bottom: 5px;
+}
+
+.modulo{
+    color: #34BF98;
+    font-size: 2em;
+    padding: 0.25em;
+}
+
+.principal{
+    color: #141726;
+    font-size: 2em;
+    background-color:#34BF98;
+}
+
+a {
+    color: #F2CCB6;
+}
