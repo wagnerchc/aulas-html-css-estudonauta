@@ -47,6 +47,7 @@ header > h1{
     font-family: var(--font-destaque);
     margin-bottom: 20px;
     font-size: 3em;
+    font-weight: normal;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.336);
 }
 
@@ -57,6 +58,7 @@ header > p {
     max-width: 500px;
     padding-left: 10px;
     padding-right: 10px;
+    padding-bottom: 20px;
     margin: auto;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.336);
 }
@@ -95,6 +97,7 @@ main {
 main h1 {
     color: var(--cor5);
     font-family: var(--font-android);
+    font-weight: normal;
 
 }
 
@@ -104,6 +107,7 @@ main h2 {
     font-size: 1.3em;
     background-image: linear-gradient(to right, transparent 10%, var(--cor1) 80%, transparent);
     text-indent: 8px;
+    font-weight: normal;
 }
 
 main p {
@@ -143,6 +147,22 @@ img {
     width: 100%;
 }
 
+div.video {
+    background-color: var(--cor3);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 56.5%;
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
 aside {
     background-color: var(--cor1);
     padding: 10px;
@@ -159,9 +179,14 @@ aside > ul {
 aside > h3 {
     background-color: var(--cor4);
     color: white;
-    padding: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
     margin: -10px -10px 0px -10px;
     border-radius: 10px 10px 0px 0px;
+    font-family: var(--font-destaque);
+    font-weight: normal;
+    font-size: 1.4em;
 }
 
 footer {
